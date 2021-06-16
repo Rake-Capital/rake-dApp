@@ -1,6 +1,6 @@
-# Rari dApp &middot; ![Tests](https://github.com/Rari-Capital/rari-dApp/workflows/Tests/badge.svg) &middot; [![Coverage Status](https://coveralls.io/repos/github/Rari-Capital/rari-dApp/badge.svg?branch=master)](https://coveralls.io/github/Rari-Capital/rari-dApp?branch=master)
+# Rake dApp &middot; ![Tests](https://github.com/Rari-Capital/rari-dApp/workflows/Tests/badge.svg) &middot; [![Coverage Status](https://coveralls.io/repos/github/Rari-Capital/rari-dApp/badge.svg?branch=master)](https://coveralls.io/github/Rari-Capital/rari-dApp?branch=master)
 
-Rari Capital's React dApp for easy interactions with the Rari Capital Protocol.
+Rake Capital's React dApp for easy interactions with the Rake Capital Protocol.
 
 <p float="left">
   <img src="https://i.imgur.com/9drql0H.png" width="300" />
