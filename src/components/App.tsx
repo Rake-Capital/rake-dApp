@@ -6,12 +6,12 @@ import { Pool } from "../utils/poolUtils";
 import Layout from "./shared/Layout";
 import { memo } from "react";
 
-const MultiPoolPortal = loadable(
-  () => import(/* webpackPrefetch: true */ "./pages/MultiPoolPortal"),
-  {
-    fallback: <FullPageSpinner />,
-  }
-);
+// const MultiPoolPortal = loadable(
+//   () => import(/* webpackPrefetch: true */ "./pages/MultiPoolPortal"),
+//   {
+//     fallback: <FullPageSpinner />,
+//   }
+// );
 
 const PoolPortal = loadable(
   () => import(/* webpackPrefetch: true */ "./pages/PoolPortal"),
