@@ -32,7 +32,7 @@ const FusePoolBanner = () => {
             textAlign="center"
           >
             {t(
-              "Peer-to-peer lending with low fees on any crypto-asset. Stake & borrow on Polygon."
+              "Stake & borrow on Polygon."
             )}
           </Text>
         </Center>

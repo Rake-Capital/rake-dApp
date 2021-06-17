@@ -57,7 +57,7 @@ const FusePoolPage = memo(() => {
       <Column
         mainAxisAlignment="flex-start"
         crossAxisAlignment="center"
-        color="#FFFFFF"
+        color="#000"
         mx="auto"
         width={isMobile ? "100%" : "1150px"}
         px={isMobile ? 4 : 0}
@@ -433,7 +433,7 @@ const AssetSupplyRow = ({
             onClick={authedOpenModal}
           >
             <Text
-              color={tokenData?.color ?? "#FF"}
+              color={"000"}
               fontWeight="bold"
               fontSize="17px"
             >
@@ -452,7 +452,7 @@ const AssetSupplyRow = ({
           onClick={authedOpenModal}
         >
           <Text
-            color={tokenData?.color ?? "#FFF"}
+            color={"#000"}
             fontWeight="bold"
             fontSize="17px"
           >
@@ -669,7 +669,7 @@ const AssetBorrowRow = ({
             width="27%"
           >
             <Text
-              color={tokenData?.color ?? "#FF"}
+              color={"#000"}
               fontWeight="bold"
               fontSize="17px"
             >
@@ -686,7 +686,7 @@ const AssetBorrowRow = ({
           width={isMobile ? "40%" : "27%"}
         >
           <Text
-            color={tokenData?.color ?? "#FFF"}
+            color={"#000"}
             fontWeight="bold"
             fontSize="17px"
           >
@@ -713,7 +713,7 @@ const AssetBorrowRow = ({
               crossAxisAlignment="flex-end"
             >
               <Text
-                color={tokenData?.color ?? "#FFF"}
+                color={"#000"}
                 fontWeight="bold"
                 fontSize="17px"
               >

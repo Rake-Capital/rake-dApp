@@ -11,7 +11,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 
-import { Row, Column, Center } from "utils/chakraUtils";
+import { Row, Column } from "utils/chakraUtils";
 import DashboardBox from "./DashboardBox";
 
 // @ts-ignore
