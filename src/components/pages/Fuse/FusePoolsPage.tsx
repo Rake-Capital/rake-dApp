@@ -1,5 +1,10 @@
 import { Avatar, AvatarGroup, Link, Spinner, Text } from "@chakra-ui/react";
-import { Center, Column, Row, useIsMobile } from "utils/chakraUtils";
+import {
+  Center,
+  Column,
+  Row,
+  useIsMobile,
+} from "utils/chakraUtils";
 import { useTranslation } from "react-i18next";
 import { useRari } from "context/RariContext";
 import { useIsSmallScreen } from "hooks/useIsSmallScreen";
@@ -11,6 +16,7 @@ import { ModalDivider } from "../../shared/Modal";
 
 import { Link as RouterLink } from "react-router-dom";
 import FuseStatsBar from "./FuseStatsBar";
+import FusePoolBanner from "./FusePoolBanner";
 import FuseTabBar, { useFilter } from "./FuseTabBar";
 import { useTokenData } from "hooks/useTokenData";
 
@@ -26,6 +32,7 @@ const FusePoolsPage = memo(() => {
   const { isAuthed } = useRari();
   const isMobile = useIsSmallScreen();
 
+
   return (
     <>
       <Column
@@ -37,15 +44,14 @@ const FusePoolsPage = memo(() => {
         height="100%"
         px={isMobile ? 4 : 0}
       >
+        <TopBanner />
         <Header isAuthed={isAuthed} isFuse />
+        <FusePoolBanner />
         <FuseStatsBar />
-
         <FuseTabBar />
-
         <DashboardBox width="100%" mt={4}>
           <PoolList />
         </DashboardBox>
-
         <Footer />
       </Column>
     </>
@@ -53,6 +59,26 @@ const FusePoolsPage = memo(() => {
 });
 
 export default FusePoolsPage;
+
+const TopBanner = () => {
+  const { t } = useTranslation();
+  return (
+    <Row
+      mainAxisAlignment="flex-start"
+      crossAxisAlignment="center"
+      height="45px"
+      width="100%"
+      flexShrink={0}
+      textAlign="center"
+      background="linear-gradient(180deg,#6AE89C 0%, #C3F9D8 100%);"
+      // background="linear-gradient(180deg, #6AE89C 0%, #C3F9D8 100%"
+    >
+      <Text fontSize="14px" fontWeight="normal" width="100%">
+        {t("Fuse by Rari Protocol. Now coming to Polygon.")}
+      </Text>
+    </Row>
+  );
+}
 
 const PoolList = () => {
   const filter = useFilter();

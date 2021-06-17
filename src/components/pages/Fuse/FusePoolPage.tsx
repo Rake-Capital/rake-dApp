@@ -44,6 +44,7 @@ import LogRocket from "logrocket";
 import Footer from "components/shared/Footer";
 
 const FusePoolPage = memo(() => {
+    const { t } = useTranslation();
   const { isAuthed } = useRari();
 
   const isMobile = useIsSemiSmallScreen();
