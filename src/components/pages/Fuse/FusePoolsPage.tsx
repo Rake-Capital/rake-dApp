@@ -38,7 +38,7 @@ const FusePoolsPage = memo(() => {
       <Column
         mainAxisAlignment="flex-start"
         crossAxisAlignment="center"
-        color="#FFFFFF"
+        color="#000"
         mx="auto"
         width={isMobile ? "100%" : "1000px"}
         height="100%"
