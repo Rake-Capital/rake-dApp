@@ -17,6 +17,7 @@ import {
   AnimatedPoolLogo,
   AnimatedSmallLogo,
   FuseSmallLogo,
+  GreenLogoFooter,
   PoolLogo,
 } from "./Logos";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -56,14 +57,14 @@ export const Header = ({
         isPool ? (
           <AnimatedPoolLogo />
         ) : isFuse ? (
-          <AnimatedFuseSmallLogo />
+          <GreenLogoFooter />
         ) : (
           <AnimatedSmallLogo />
         )
       ) : isPool ? (
         <PoolLogo />
       ) : isFuse ? (
-        <FuseSmallLogo />
+        <GreenLogoFooter />
       ) : (
         <AnimatedSmallLogo />
       )}
