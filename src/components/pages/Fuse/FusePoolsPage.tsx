@@ -70,6 +70,7 @@ const TopBanner = () => {
       width="100%"
       flexShrink={0}
       textAlign="center"
+      color="#111"
       background="linear-gradient(180deg,#6AE89C 0%, #C3F9D8 100%);"
       // background="linear-gradient(180deg, #6AE89C 0%, #C3F9D8 100%"
     >

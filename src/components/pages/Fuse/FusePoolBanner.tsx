@@ -1,41 +1,16 @@
 import {
-  Avatar,
-  AvatarGroup,
-  Link,
-  Spinner,
   Text,
   Button,
 } from "@chakra-ui/react";
 import {
   Center,
   Column,
-  Row,
-  useIsMobile,
   RowOrColumn,
 } from "utils/chakraUtils";
-import { AccountButton } from "../../shared/AccountButton";
 import { Divider } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import { useRari } from "context/RariContext";
 import { useIsSmallScreen } from "hooks/useIsSmallScreen";
-import { smallUsdFormatter } from "utils/bigUtils";
 
-import DashboardBox from "../../shared/DashboardBox";
-import { Header } from "../../shared/Header";
-import { ModalDivider } from "../../shared/Modal";
-
-import { Link as RouterLink } from "react-router-dom";
-import FuseStatsBar from "./FuseStatsBar";
-import FuseTabBar, { useFilter } from "./FuseTabBar";
-import { useTokenData } from "hooks/useTokenData";
-
-import { filterPoolName } from "utils/fetchFusePoolData";
-
-import { letterScore, usePoolRSS } from "hooks/useRSS";
-import { SimpleTooltip } from "components/shared/SimpleTooltip";
-import { useFusePools } from "hooks/fuse/useFusePools";
-import Footer from "components/shared/Footer";
-import { memo } from "react";
 
 const FusePoolBanner = () => {
   const { t } = useTranslation();

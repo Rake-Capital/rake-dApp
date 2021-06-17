@@ -29,8 +29,7 @@ import { version } from "../..";
 
 import MoonpayModal from "../pages/MoonpayModal";
 import { useIsSmallScreen } from "../../hooks/useIsSmallScreen";
-import { useAuthedCallback } from "../../hooks/useAuthedCallback";
-
+import { useAuthedCallback } from "../../hooks/useAuthedCallback"; 
 export const AccountButton = memo(() => {
   const {
     isOpen: isSettingsModalOpen,
@@ -113,7 +112,7 @@ const Buttons = ({
           >
             <Center expand>{t("Buy Crypto")}</Center>
           </DashboardBox> */}
-
+          {/* 
           <DashboardBox
             ml={1}
             as="button"
@@ -125,7 +124,7 @@ const Buttons = ({
             fontWeight="bold"
           >
             <Center expand>{t("Claim RGT")}</Center>
-          </DashboardBox>
+          </DashboardBox> */}
         </>
       )}
 
@@ -151,7 +150,9 @@ const Buttons = ({
             isAttemptingLogin ? (
               <Spinner />
             ) : (
-              <Text fontWeight="semibold">{t("Connect")}</Text>
+              <>
+                <Text fontWeight="semibold">{t("Login")}</Text>
+              </>
             )
           ) : (
             <>
