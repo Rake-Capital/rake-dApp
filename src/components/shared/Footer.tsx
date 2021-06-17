@@ -1,56 +1,130 @@
-import CopyrightSpacer from "./CopyrightSpacer";
-import { Link, Text } from "@chakra-ui/react";
+import { Link as RouterLink} from "react-router-dom";
+import { Link, Text, List, ListItem } from "@chakra-ui/react";
 import { Row, Column } from "utils/chakraUtils";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
+
+import {
+  GreenLogoFooter
+} from "components/shared/Logos";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <>
-      <Column
-        mainAxisAlignment="center"
-        crossAxisAlignment="center"
-        py={3}
-        width="100%"
-        flexShrink={0}
-        mt="auto"
-      >
         <Row
           mainAxisAlignment="center"
           crossAxisAlignment="center"
           mt={4}
+          py={15}
           width="100%"
         >
-          <Link target="_blank" href="https://docs.rari.capital/">
-            <Text color="white" mx={2} text="sm" textDecoration="underline">
-              {t("Docs")}
-            </Text>
-          </Link>
-          <Text color="white" text="sm">
-            ·
-          </Text>
-          <Link
-            target="_blank"
-            href="https://www.notion.so/Rari-Capital-3d762a07d2c9417e9cd8c2e4f719e4c3"
+          <Column
+            mainAxisAlignment="flex-start"
+            crossAxisAlignment="flex-start"
+            width="50%"
+            flexShrink={0}
+            ml={-10}
           >
-            <Text color="white" mx={2} text="sm" textDecoration="underline">
-              {t("Notion")}
-            </Text>
-          </Link>
-          <Text color="white" text="sm">
-            ·
-          </Text>
-          <Link
-            target="_blank"
-            href="https://www.notion.so/Rari-Capital-Audit-Quantstamp-December-2020-24a1d1df94894d6881ee190686f47bc7"
-          >
-            <Text color="white" mx={2} text="sm" textDecoration="underline">
-              {t("Audit")}
-            </Text>
-          </Link>
+              <Link
+                as={RouterLink} to="/"
+              >
+                <GreenLogoFooter />
+              </Link>
+              <Text fontSize="30px">
+                Rake Capital
+              </Text>
+              <Text fontSize="12px">
+                Bringing Fuse by Rari Protocol to Polygon
+              </Text>
+              <Text fontSize="12px">
+                © {new Date().getFullYear()} Rake Capital
+              </Text>
+              <Link
+                as={RouterLink} to="/"
+              >Terms & Conditions</Link>
+            </Column>
+            <Column
+              mainAxisAlignment="flex-start"
+              crossAxisAlignment="flex-start"
+              width="15%"
+              flexShrink={0}
+              mt={-16}
+            >
+              <List>
+                <Text fontSize="18px">
+                  RESOURCES
+                </Text>
+                <ListItem>
+                  <Link
+                    as={RouterLink} to="/"
+                  >
+                    Notion Doc
+                  </Link>
+                </ListItem>
+              </List>
+            </Column>
+            <Column
+              mainAxisAlignment="flex-start"
+              crossAxisAlignment="flex-start"
+              width="15%"
+              flexShrink={0}
+              mt={-16}
+
+            >
+              <List>
+                <Text fontSize="18px">
+                  $RAKE
+                </Text>
+                <ListItem>
+                  <Link
+                    as={RouterLink} to="/"
+                  >
+                    Launching Soon
+                  </Link>
+                </ListItem>
+              </List>
+            </Column>
+            <Column
+              mainAxisAlignment="flex-start"
+              crossAxisAlignment="flex-start"
+              width="15%"
+              flexShrink={0}
+            >
+              <List>
+                <Text fontSize="18px">
+                  LET'S TALK
+                </Text>
+                <ListItem>
+                  <Link
+                    href="mailto: hq@rake.capital"
+                  >
+                    hq@rake.capital
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="mailto: hq@rake.capital"
+                  >
+                    Discord
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="mailto: hq@rake.capital"
+                  >
+                    Twitter
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="mailto: hq@rake.capital"
+                  >
+                    Github
+                  </Link>
+                </ListItem>
+              </List>
+            </Column>
         </Row>
-        <CopyrightSpacer forceShow />
-      </Column>
     </>
   );
 };
