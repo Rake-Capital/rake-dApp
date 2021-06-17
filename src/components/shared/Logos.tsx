@@ -16,6 +16,7 @@ import FusePNGWhite from "static/icons/fuse.png";
 import FusePNGGreen from "static/icons/fuseGreen.png";
 import Pool2PNGWhite from "static/icons/pool2.png";
 import Pool2PNGGreen from "static/icons/pool2Green.png";
+import GreenLogo2 from "static/icons/logoGreen2.png";
 import TranchesPNGWhite from "static/icons/tranches.png";
 import TranchesPNGGreen from "static/icons/tranchesGreen.png";
 
@@ -166,6 +167,23 @@ export const Pool2LogoPNGGreen = ({
   <PNGLogo
     boxSize={boxSize}
     Logo={Pool2PNGGreen}
+    width={width}
+    height={height}
+  />
+);
+
+export const GreenLogoFooter = ({
+  boxSize,
+  width,
+  height,
+}: {
+  boxSize?: string;
+  width?: string;
+  height?: string;
+}) => (
+  <PNGLogo
+    boxSize={boxSize}
+    Logo={GreenLogo2}
     width={width}
     height={height}
   />
