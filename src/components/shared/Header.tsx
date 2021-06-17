@@ -13,10 +13,9 @@ import { PixelSize, Row } from "utils/chakraUtils";
 import { AccountButton } from "./AccountButton";
 import { DASHBOARD_BOX_PROPS, DASHBOARD_BOX_SPACING } from "./DashboardBox";
 import {
-  AnimatedFuseSmallLogo,
   AnimatedPoolLogo,
   AnimatedSmallLogo,
-  FuseSmallLogo,
+  GreenLogoFooter,
   PoolLogo,
 } from "./Logos";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -56,14 +55,14 @@ export const Header = ({
         isPool ? (
           <AnimatedPoolLogo />
         ) : isFuse ? (
-          <AnimatedFuseSmallLogo />
+          <GreenLogoFooter />
         ) : (
           <AnimatedSmallLogo />
         )
       ) : isPool ? (
         <PoolLogo />
       ) : isFuse ? (
-        <FuseSmallLogo />
+        <GreenLogoFooter />
       ) : (
         <AnimatedSmallLogo />
       )}
