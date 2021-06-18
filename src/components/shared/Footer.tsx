@@ -12,18 +12,18 @@ const Footer = () => {
   return (
     <>
         <Row
-          mainAxisAlignment="center"
+          mainAxisAlignment="space-around"
           crossAxisAlignment="center"
           mt={4}
           py={15}
           width="100%"
+          borderTop="4px solid"
         >
           <Column
             mainAxisAlignment="flex-start"
             crossAxisAlignment="flex-start"
-            width="50%"
+            width="57%"
             flexShrink={0}
-            ml={-10}
           >
               <Link
                 as={RouterLink} to="/"
@@ -56,7 +56,8 @@ const Footer = () => {
                 </Text>
                 <ListItem>
                   <Link
-                    as={RouterLink} to="/"
+                    href="https://www.notion.so/Rake-Capital-b21cd577099143e4b0156ccad53a9d6c"
+                    isExternal
                   >
                     Notion Doc
                   </Link>
@@ -85,9 +86,9 @@ const Footer = () => {
               </List>
             </Column>
             <Column
-              mainAxisAlignment="flex-start"
-              crossAxisAlignment="flex-start"
-              width="15%"
+              mainAxisAlignment="flex-end"
+              crossAxisAlignment="flex-end"
+              width="13%"
               flexShrink={0}
             >
               <List>
@@ -103,21 +104,24 @@ const Footer = () => {
                 </ListItem>
                 <ListItem>
                   <Link
-                    href="mailto: hq@rake.capital"
+                    href="https://discord.gg/Rq2BkJ4Kr3"
+                    isExternal
                   >
                     Discord
                   </Link>
                 </ListItem>
                 <ListItem>
                   <Link
-                    href="mailto: hq@rake.capital"
+                    href="https://twitter.com/0xRakeCapital"
+                    isExternal
                   >
                     Twitter
                   </Link>
                 </ListItem>
                 <ListItem>
                   <Link
-                    href="mailto: hq@rake.capital"
+                    href="https://github.com/Rake-Capital"
+                    isExternal
                   >
                     Github
                   </Link>

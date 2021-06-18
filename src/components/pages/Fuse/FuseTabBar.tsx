@@ -69,16 +69,16 @@ const FuseTabBar = () => {
                 placeholder={t("Try searching for USDC")}
                 variant="filled"
                 size="sm"
-                _placeholder={{ color: "#e0e0e0" }}
-                _focus={{ bg: "#282727" }}
-                _hover={{ bg: "#282727" }}
-                bg="#282727"
+                _placeholder={{ color: "#000" }}
+                _focus={{ bg: "#fff" }}
+                _hover={{ bg: "#fff" }}
+                bg="#fff"
                 borderRadius={filter ? "0px" : "0px 9px 9px 0px"}
               />
             </Row>
           </DashboardBox>
           {filter ? (
-            <DashboardBox bg="#282727" ml={-1}>
+            <DashboardBox bg="#fff" ml={-1}>
               <Link
                 /* @ts-ignore */
                 as={RouterLink}

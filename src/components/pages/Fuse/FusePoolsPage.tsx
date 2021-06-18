@@ -27,6 +27,7 @@ import { SimpleTooltip } from "components/shared/SimpleTooltip";
 import { useFusePools } from "hooks/fuse/useFusePools";
 import Footer from "components/shared/Footer";
 import { memo } from "react";
+import {EmailIcon} from "@chakra-ui/icons";
 
 const FusePoolsPage = memo(() => {
   const { isAuthed } = useRari();
@@ -38,7 +39,7 @@ const FusePoolsPage = memo(() => {
       <Column
         mainAxisAlignment="flex-start"
         crossAxisAlignment="center"
-        color="#FFFFFF"
+        color="#000"
         mx="auto"
         width={isMobile ? "100%" : "1000px"}
         height="100%"
@@ -71,11 +72,17 @@ const TopBanner = () => {
       flexShrink={0}
       textAlign="center"
       color="#111"
-      background="linear-gradient(180deg,#6AE89C 0%, #C3F9D8 100%);"
-      // background="linear-gradient(180deg, #6AE89C 0%, #C3F9D8 100%"
+      background="linear-gradient(90deg, rgba(106,232,156,1) 0%, rgba(106,232,156,1) 35%, rgba(195,249,216,1) 100%);"
     >
       <Text fontSize="14px" fontWeight="normal" width="100%">
         {t("Fuse by Rari Protocol. Now coming to Polygon.")}
+        <Link
+          href="mailto: hq@rake.capital"
+          display="inline-block"
+          pl={1}
+        >
+          <Text fontSize="14px" fontWeight="700">{t("Stay Updated")}<EmailIcon w={18} h={18} pl={1}/></Text>
+        </Link>
       </Text>
     </Row>
   );
