@@ -7,6 +7,7 @@ import {
   MenuList,
   MenuItem,
   Portal,
+  Divider
 } from "@chakra-ui/react";
 import { PixelSize, Row } from "utils/chakraUtils";
 
@@ -37,11 +38,12 @@ export const Header = ({
   isPool?: boolean;
   padding?: boolean;
 }) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
+  <>
     <Row
-      color="#FFFFFF"
+      color="#000"
       px={padding ? 4 : 0}
       height="38px"
       my={4}
@@ -55,14 +57,22 @@ export const Header = ({
         isPool ? (
           <AnimatedPoolLogo />
         ) : isFuse ? (
-          <GreenLogoFooter />
+          <Link
+                as={RouterLink} to="/"
+              >
+                <GreenLogoFooter />
+          </Link>
         ) : (
           <AnimatedSmallLogo />
         )
       ) : isPool ? (
         <PoolLogo />
       ) : isFuse ? (
-        <GreenLogoFooter />
+        <Link
+            as={RouterLink} to="/"
+        >
+          <GreenLogoFooter />
+        </Link>
       ) : (
         <AnimatedSmallLogo />
       )}
@@ -80,7 +90,7 @@ export const Header = ({
 
         <PoolsLink ml={4} /> */}
 
-        <HeaderLink ml={4} name={t("Fuse")} route="/fuse" />
+        {/* <HeaderLink ml={4} name={t("Fuse")} route="/fuse" /> */}
 
         {/* <HeaderLink ml={4} name={t("Pool2")} route="/pool2" />
 
@@ -90,13 +100,15 @@ export const Header = ({
 
         {/* <GovernanceLink ml={4} /> */}
 
-        {isAuthed && (
+        {/* {isAuthed && (
           <HeaderLink ml={4} name={t("Positions")} route="/positions" />
-        )}
+        )} */}
       </Row>
 
       <AccountButton />
     </Row>
+    <Divider />
+  </>
   );
 };
 

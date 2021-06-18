@@ -19,6 +19,8 @@ import Pool2PNGGreen from "static/icons/pool2Green.png";
 import GreenLogo2 from "static/icons/logoGreen2.png";
 import TranchesPNGWhite from "static/icons/tranches.png";
 import TranchesPNGGreen from "static/icons/tranchesGreen.png";
+import Email from "static/icons/email-icon.png";
+import MetamaskIcon from "static/icons/metamask-fox.png";
 
 import { usePoolInfoFromContext } from "../../hooks/usePoolInfo";
 
@@ -85,10 +87,10 @@ export const PoolLogo = ({ boxSize }: { boxSize?: string }) => {
 };
 
 export const PNGLogo = ({
-  boxSize = "20px",
+  boxSize = "44px",
   Logo = FuseLogo,
-  width = "20px",
-  height = "20px",
+  width = "44px",
+  height = "44px",
   ...props
 }: {
   boxSize?: string;
@@ -184,6 +186,40 @@ export const GreenLogoFooter = ({
   <PNGLogo
     boxSize={boxSize}
     Logo={GreenLogo2}
+    width={width}
+    height={height}
+  />
+);
+
+export const EmailIcon = ({
+  boxSize,
+  width,
+  height,
+}: {
+  boxSize?: string;
+  width?: string;
+  height?: string;
+}) => (
+  <PNGLogo
+    boxSize={boxSize}
+    Logo={Email}
+    width={width}
+    height={height}
+  />
+);
+
+export const Metamask = ({
+  boxSize,
+  width,
+  height,
+}: {
+  boxSize?: string;
+  width?: string;
+  height?: string;
+}) => (
+  <PNGLogo
+    boxSize={boxSize}
+    Logo={MetamaskIcon}
     width={width}
     height={height}
   />

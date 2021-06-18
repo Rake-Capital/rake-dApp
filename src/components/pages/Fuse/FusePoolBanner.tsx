@@ -36,7 +36,9 @@ const FusePoolBanner = () => {
             )}
           </Text>
         </Center>
-        <Divider />
+        <Center width="300px" height="4px">
+          <Divider border="4px solid" borderColor="#41C345"/>
+        </Center>
         <Center mt="4" textStyle="h1" width={isMobile ? "100%" : "65%"}>
           <Text
             color={"#FF"}
@@ -50,7 +52,7 @@ const FusePoolBanner = () => {
           </Text>
         </Center>
         <Center my="5" textStyle="h1" width={isMobile ? "100%" : "65%"}>
-          <Button colorScheme="teal" variant="solid" >
+          <Button colorScheme="linear-gradient(90deg,#6AE89C 0%, #C3F9D8 100%);" variant="solid" color="#000">
             Put your money to work
           </Button>
         </Center>
