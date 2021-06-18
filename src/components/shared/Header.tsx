@@ -57,14 +57,22 @@ export const Header = ({
         isPool ? (
           <AnimatedPoolLogo />
         ) : isFuse ? (
-          <GreenLogoFooter />
+          <Link
+                as={RouterLink} to="/"
+              >
+                <GreenLogoFooter />
+          </Link>
         ) : (
           <AnimatedSmallLogo />
         )
       ) : isPool ? (
         <PoolLogo />
       ) : isFuse ? (
-        <GreenLogoFooter />
+        <Link
+            as={RouterLink} to="/"
+        >
+          <GreenLogoFooter />
+        </Link>
       ) : (
         <AnimatedSmallLogo />
       )}

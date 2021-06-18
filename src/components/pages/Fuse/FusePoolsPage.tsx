@@ -36,6 +36,7 @@ const FusePoolsPage = memo(() => {
 
   return (
     <>
+      <TopBanner />
       <Column
         mainAxisAlignment="flex-start"
         crossAxisAlignment="center"
@@ -45,7 +46,6 @@ const FusePoolsPage = memo(() => {
         height="100%"
         px={isMobile ? 4 : 0}
       >
-        <TopBanner />
         <Header isAuthed={isAuthed} isFuse />
         <FusePoolBanner />
         <FuseStatsBar />

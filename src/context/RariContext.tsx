@@ -113,7 +113,7 @@ async function launchModalLazy(
       main: "#FFFFFF",
       secondary: "#858585",
       border: DASHBOARD_BOX_PROPS.borderColor,
-      hover: "#000000",
+      hover: "#3cdb9e",
     },
   });
 
