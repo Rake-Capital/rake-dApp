@@ -60,7 +60,7 @@ export const Header = ({
           <Link
                 as={RouterLink} to="/"
               >
-                <GreenLogoFooter />
+                <GreenLogoFooter width={"7"} height={"7"} boxSize={"7"}/>
           </Link>
         ) : (
           <AnimatedSmallLogo />

@@ -48,7 +48,7 @@ const FuseTabBar = () => {
               expand
               crossAxisAlignment="center"
               mainAxisAlignment="flex-start"
-              fontWeight="bold"
+              fontWeight="normal"
             >
               <Text flexShrink={0}>{t("Search:")}</Text>
 
@@ -172,7 +172,7 @@ const TabLink = ({ route, text }: { route: string; text: string }) => {
           ? activeStyle
           : noop)}
       >
-        <Center expand px={2} fontWeight="bold">
+        <Center expand px={2} fontWeight="normal">
           {text}
         </Center>
       </DashboardBox>
@@ -192,7 +192,7 @@ const TabExternalLink = ({ route, text }: { route: string; text: string }) => {
       mt={isMobile ? 4 : 0}
     >
       <DashboardBox height="35px">
-        <Center expand px={2} fontWeight="bold">
+        <Center expand px={2} fontWeight="normal">
           {text}
         </Center>
       </DashboardBox>

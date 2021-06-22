@@ -59,7 +59,7 @@ const Stat = ({
   text: string;
 }) => {
   return (
-    <Heading fontSize={size} lineHeight="2.5rem">
+    <Heading fontSize={size} lineHeight="2.5rem" fontWeight="normal">
       {text}
     </Heading>
   );

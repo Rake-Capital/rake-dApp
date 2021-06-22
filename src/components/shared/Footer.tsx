@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
         <Row
-          mainAxisAlignment="space-around"
+          mainAxisAlignment="space-between"
           crossAxisAlignment="center"
           mt={4}
           py={15}
@@ -49,6 +49,11 @@ const Footer = () => {
               width="15%"
               flexShrink={0}
               mt={-16}
+              sx={{
+                "@media only screen and (max-width: 768px)": {
+                  display: "none",
+                },
+              }}
             >
               <List>
                 <Text fontSize="18px">
@@ -70,6 +75,11 @@ const Footer = () => {
               width="15%"
               flexShrink={0}
               mt={-16}
+              sx={{
+                "@media only screen and (max-width: 768px)": {
+                  display: "none",
+                },
+              }}
 
             >
               <List>
@@ -124,6 +134,70 @@ const Footer = () => {
                     isExternal
                   >
                     Github
+                  </Link>
+                </ListItem>
+              </List>
+            </Column>
+        </Row>
+        <Row
+          mainAxisAlignment="space-between"
+          crossAxisAlignment="center"
+          mt={16}
+          py={15}
+          width="100%"
+          sx={{
+            "@media only screen and (min-width: 769px)": {
+              display: "none",
+            },
+          }}
+        >
+          <Column
+              mainAxisAlignment="flex-start"
+              crossAxisAlignment="flex-start"
+              width="50%%"
+              flexShrink={0}
+              mt={-16}
+              sx={{
+                "@media only screen and (min-width: 769px)": {
+                  display: "none",
+                },
+              }}
+            >
+              <List>
+                <Text fontSize="18px">
+                  RESOURCES
+                </Text>
+                <ListItem>
+                  <Link
+                    href="https://www.notion.so/Rake-Capital-b21cd577099143e4b0156ccad53a9d6c"
+                    isExternal
+                  >
+                    Notion Doc
+                  </Link>
+                </ListItem>
+              </List>
+            </Column>
+            <Column
+              mainAxisAlignment="flex-start"
+              crossAxisAlignment="flex-start"
+              width="50%%"
+              flexShrink={0}
+              mt={-16}
+              sx={{
+                "@media only screen and (min-width: 769px)": {
+                  display: "none",
+                },
+              }}
+            >
+              <List>
+                <Text fontSize="18px">
+                  $RAKE
+                </Text>
+                <ListItem>
+                  <Link
+                    as={RouterLink} to="/"
+                  >
+                    Launching Soon
                   </Link>
                 </ListItem>
               </List>

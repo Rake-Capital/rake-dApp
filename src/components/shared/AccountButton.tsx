@@ -30,6 +30,7 @@ import { version } from "../..";
 import MoonpayModal from "../pages/MoonpayModal";
 import { useIsSmallScreen } from "../../hooks/useIsSmallScreen";
 import { useAuthedCallback } from "../../hooks/useAuthedCallback"; 
+import {Metamask} from "components/shared/Logos";
 export const AccountButton = memo(() => {
   const {
     isOpen: isSettingsModalOpen,
@@ -151,7 +152,8 @@ const Buttons = ({
               <Spinner />
             ) : (
               <>
-                <Text fontWeight="semibold">{t("Login")}</Text>
+                <Metamask width={"6"} height={"6"}/>
+                <Text>{t("Login")}</Text>
               </>
             )
           ) : (
