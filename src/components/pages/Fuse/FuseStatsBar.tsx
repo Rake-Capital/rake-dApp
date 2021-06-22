@@ -43,7 +43,7 @@ const FuseStatsBar = () => {
           p={4}
           fontSize="sm"
         >
-          <Heading size="lg" mb="2px">
+          <Heading size="lg" mb="2px" fontWeight="normal">
             {t("Fuse")}
           </Heading>
 

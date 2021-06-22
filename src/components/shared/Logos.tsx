@@ -87,10 +87,10 @@ export const PoolLogo = ({ boxSize }: { boxSize?: string }) => {
 };
 
 export const PNGLogo = ({
-  boxSize = "44px",
+  boxSize,
   Logo = FuseLogo,
-  width = "44px",
-  height = "44px",
+  width,
+  height,
   ...props
 }: {
   boxSize?: string;

@@ -81,7 +81,7 @@ const TopBanner = () => {
           display="inline-block"
           pl={1}
         >
-          <Text fontSize="14px" fontWeight="700">{t("Stay Updated")}<EmailIcon w={18} h={18} pl={1}/></Text>
+          <Text fontSize="14px" fontWeight="700">{t("Stay Updated")}<EmailIcon w={18} h={18} pl={1} pb={1}/></Text>
         </Link>
       </Text>
     </Row>
@@ -110,25 +110,25 @@ const PoolList = () => {
         pl={4}
         pr={1}
       >
-        <Text fontWeight="bold" width={isMobile ? "100%" : "40%"}>
+        <Text fontWeight="normal" width={isMobile ? "100%" : "40%"}>
           {!isMobile ? t("Pool Assets") : t("Pool Directory")}
         </Text>
 
         {isMobile ? null : (
           <>
-            <Text fontWeight="bold" textAlign="center" width="13%">
+            <Text fontWeight="normal" textAlign="center" width="13%">
               {t("Pool Number")}
             </Text>
 
-            <Text fontWeight="bold" textAlign="center" width="16%">
+            <Text fontWeight="normal" textAlign="center" width="16%">
               {t("Total Supplied")}
             </Text>
 
-            <Text fontWeight="bold" textAlign="center" width="16%">
+            <Text fontWeight="normal" textAlign="center" width="16%">
               {t("Total Borrowed")}
             </Text>
 
-            <Text fontWeight="bold" textAlign="center" width="15%">
+            <Text fontWeight="normal" textAlign="center" width="15%">
               {t("Pool Risk Score")}
             </Text>
           </>
@@ -231,13 +231,13 @@ const PoolRow = ({
           {isMobile ? null : (
             <>
               <Center height="100%" width="13%">
-                <b>{poolNumber}</b>
+                {poolNumber}
               </Center>
               <Center height="100%" width="16%">
-                <b>{smallUsdFormatter(tvl)}</b>
+                {smallUsdFormatter(tvl)}
               </Center>
               <Center height="100%" width="16%">
-                <b>{smallUsdFormatter(borrowed)}</b>
+                {smallUsdFormatter(borrowed)}
               </Center>
               <Center height="100%" width="15%">
                 <SimpleTooltip
@@ -247,7 +247,7 @@ const PoolRow = ({
                     "%"
                   }
                 >
-                  <b>{rssScore}</b>
+                  {rssScore}
                 </SimpleTooltip>
               </Center>
             </>
