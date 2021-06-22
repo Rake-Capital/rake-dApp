@@ -133,10 +133,11 @@ const Buttons = ({
       <DashboardBox
         ml={isMobile ? 0 : 4}
         as="button"
-        height="40px"
+        height="35px"
         flexShrink={0}
         flexGrow={0}
-        width="133px"
+        width="110px"
+        border="2px solid #868686"
         onClick={handleAccountButtonClick}
       >
         <Row
