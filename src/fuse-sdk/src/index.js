@@ -31,9 +31,9 @@ export default class Fuse {
     "0x4ff1f64683785E0460c24A4EF78D582C2488704f";
 
   static COMPTROLLER_IMPLEMENTATION_CONTRACT_ADDRESS =
-    "0x94b2200d28932679def4a7d08596a229553a994e";
+    "0x01cf58e264d7578D4C67022c58A24CbC4C4a304E";
   static CERC20_DELEGATE_CONTRACT_ADDRESS =
-    "0x67e70eeb9dd170f7b4a9ef620720c9069d5e706c";
+    "0xd038A2EE73b64F30d65802Ad188F27921656f28F";
   static CETHER_DELEGATE_CONTRACT_ADDRESS =
     "0x60884c8faad1b30b1c76100da92b76ed3af849ba";
 
@@ -129,6 +129,7 @@ export default class Fuse {
     JumpRateModel_Stables_Majors: "0xb579d2761470bba14018959d6dffcc681c09c04b",
     JumpRateModel_Gov_Seeds: "0xcdC0a449E011249482824efFcfA05c883d36CfC7",
     JumpRateModel_ALCX: "0x58c3e7119ec200c09b2b3a9f8ce3bd77b6b47012",
+    JumpRateModel_Cream_Stables_Majors: "0x666432Ccb747B2220875cE185f487Ed53677faC9"
   };
 
   constructor(web3Provider) {
