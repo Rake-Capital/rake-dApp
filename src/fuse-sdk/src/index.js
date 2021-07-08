@@ -43,14 +43,14 @@ export default class Fuse {
     "0xfCEAdAFab14d46e20144F48824d0C09B1a03F2BC";
 
   static PUBLIC_PRICE_ORACLE_CONTRACT_ADDRESSES = {
-    PreferredPriceOracle: "0x2BB8B93F585B43b06F3d523bf30C203d3B6d4BD4", // TODO: Set correct mainnet address after deployment
+    PreferredPriceOracle: "0x25C0a2F0A077F537Bd11897F04946794c2f6f1Ef", // TODO: Set correct mainnet address after deployment
     ChainlinkPriceOracle: "",
-    ChainlinkPriceOracleV2: "0x7A28cf37763279F774916b85b5ef8b64AB421f79",
+    ChainlinkPriceOracleV2: "0xFCFE742e19790Dd67a627875ef8b45F17DB1DaC6",
     UniswapView: "", // NOT IN USE
     Keep3rPriceOracle_Uniswap: "", // NO LONGER IN USE
     Keep3rPriceOracle_SushiSwap: "", // NO LONGER IN USE
     Keep3rV2PriceOracle_Uniswap: "", // NO LONGER IN USE
-    UniswapTwapPriceOracle_Uniswap: "0x6A47346e722937B60Df7a1149168c0E76DD6520f",
+    UniswapTwapPriceOracle_Uniswap: "0x9C85258d9A00C01d00ded98065ea3840dF06f09c",
     UniswapTwapPriceOracle_SushiSwap: "",
     UniswapLpTokenPriceOracle: "", // TODO: Set correct mainnet address after deployment
     RecursivePriceOracle: "", // TODO: Set correct mainnet address after deployment
