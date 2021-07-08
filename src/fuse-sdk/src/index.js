@@ -22,13 +22,13 @@ const axios = require("axios");
 
 export default class Fuse {
   static FUSE_POOL_DIRECTORY_CONTRACT_ADDRESS =
-    "0x835482FE0532f169024d5E9410199369aAD5C77E";
+    "0x124dDf9BdD2DdaD012ef1D5bBd77c00F05C610DA";
   static FUSE_SAFE_LIQUIDATOR_CONTRACT_ADDRESS =
-    "0x41C7F2D48bde2397dFf43DadA367d2BD3527452F";
+    "0xe044814c9eD1e6442Af956a817c161192cBaE98F";
   static FUSE_FEE_DISTRIBUTOR_CONTRACT_ADDRESS =
-    "0xa731585ab05fC9f83555cf9Bff8F58ee94e18F85";
+    "0xaB837301d12cDc4b97f1E910FC56C9179894d9cf";
   static FUSE_POOL_LENS_CONTRACT_ADDRESS =
-    "0x8dA38681826f4ABBe089643D2B3fE4C6e4730493";
+    "0x4ff1f64683785E0460c24A4EF78D582C2488704f";
 
   static COMPTROLLER_IMPLEMENTATION_CONTRACT_ADDRESS =
     "0x94b2200d28932679def4a7d08596a229553a994e";
@@ -43,15 +43,15 @@ export default class Fuse {
     "0xfCEAdAFab14d46e20144F48824d0C09B1a03F2BC";
 
   static PUBLIC_PRICE_ORACLE_CONTRACT_ADDRESSES = {
-    PreferredPriceOracle: "", // TODO: Set correct mainnet address after deployment
-    ChainlinkPriceOracle: "0xe102421A85D9C0e71C0Ef1870DaC658EB43E1493",
-    ChainlinkPriceOracleV2: "0xb0602af43Ca042550ca9DA3c33bA3aC375d20Df4",
+    PreferredPriceOracle: "0x2BB8B93F585B43b06F3d523bf30C203d3B6d4BD4", // TODO: Set correct mainnet address after deployment
+    ChainlinkPriceOracle: "",
+    ChainlinkPriceOracleV2: "0x7A28cf37763279F774916b85b5ef8b64AB421f79",
     UniswapView: "", // NOT IN USE
-    Keep3rPriceOracle_Uniswap: "0xb90de476d438b37a4a143bf729a9b2237e544af6", // NO LONGER IN USE
-    Keep3rPriceOracle_SushiSwap: "0x08d415f90ccfb971dfbfdd6266f9a7cb1c166fc0", // NO LONGER IN USE
-    Keep3rV2PriceOracle_Uniswap: "0xd6a8cac634e59c00a3d4163f839d068458e39869", // NO LONGER IN USE
-    UniswapTwapPriceOracle_Uniswap: "0xCd8f1c72Ff98bFE3B307869dDf66f5124D57D3a9",
-    UniswapTwapPriceOracle_SushiSwap: "0xfD4B4552c26CeBC54cD80B1BDABEE2AC3E7eB324",
+    Keep3rPriceOracle_Uniswap: "", // NO LONGER IN USE
+    Keep3rPriceOracle_SushiSwap: "", // NO LONGER IN USE
+    Keep3rV2PriceOracle_Uniswap: "", // NO LONGER IN USE
+    UniswapTwapPriceOracle_Uniswap: "0x6A47346e722937B60Df7a1149168c0E76DD6520f",
+    UniswapTwapPriceOracle_SushiSwap: "",
     UniswapLpTokenPriceOracle: "", // TODO: Set correct mainnet address after deployment
     RecursivePriceOracle: "", // TODO: Set correct mainnet address after deployment
     YVaultV1PriceOracle: "", // TODO: Set correct mainnet address after deployment
