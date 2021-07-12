@@ -77,7 +77,7 @@ const TopBanner = () => {
       <Text fontSize="14px" fontWeight="normal" width="100%">
         {t("Fuse by Rari Protocol. Now coming to Polygon.")}
         <Link
-          href="mailto: hq@rake.capital"
+          href="https://be1tyj4w7g7.typeform.com/to/jApaVCPy"
           display="inline-block"
           pl={1}
         >
